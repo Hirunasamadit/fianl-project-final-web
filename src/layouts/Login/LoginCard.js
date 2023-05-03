@@ -12,7 +12,7 @@ import PermIdentitySharpIcon from '@mui/icons-material/PermIdentitySharp';
 import KeySharpIcon from '@mui/icons-material/KeySharp';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
 import SwitchWithTypography from './SwitchWithTypography';
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function LoginCard() {
   return (
@@ -59,7 +59,7 @@ export default function LoginCard() {
               </Grid2>
             </Grid2>
             <div style={{ paddingTop: 12 }}>
-              {/* <NavLink style={{ textDecoration: 'none' }} to={`/home`}> */}
+              <NavLink style={{ textDecoration: 'none' }} to={`/home`}>
                 <Button
                   fullWidth
                   variant="contained"
@@ -67,7 +67,7 @@ export default function LoginCard() {
                 >
                   Login
                 </Button>
-              {/* </NavLink> */}
+              </NavLink>
             </div>
             <div style={{ paddingTop: 12 }}>
               <Divider />
@@ -82,11 +82,11 @@ export default function LoginCard() {
               </Button>
             </div>
             <div style={{ paddingTop: 12 }}>
-              {/* <NavLink style={{ textDecoration: 'none' }} to={`/register`}> */}
+              <NavLink style={{ textDecoration: 'none' }} to={`/register`}>
                 <Typography>
                   Don't have an account? <Link>Signup now</Link>
                 </Typography>
-              {/* </NavLink> */}
+              </NavLink>
             </div>
           </div>
         </CardContent>

@@ -9,7 +9,7 @@ import {
   Typography,
 } from '@mui/material';
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function SignupCard() {
   return (
@@ -38,21 +38,18 @@ export default function SignupCard() {
         </Grid>
 
         <div style={{ paddingTop: 24 }}>
-          {/* <NavLink style={{ textDecoration: 'none' }} to={`/login`}> */}
-            <Button
-              fullWidth
-              variant="contained"
-              sx={{
-                backgroundColor: '#064635',
-                color: '#fff',
-                textTransform: 'none',
-              }}
-            >
-              Sign Up
-            </Button>
-          {/* </NavLink> */}
+          <Button
+            fullWidth
+            variant="contained"
+            sx={{
+              backgroundColor: '#064635',
+              color: '#fff',
+              textTransform: 'none',
+            }}
+          >
+            Sign Up
+          </Button>
         </div>
-
         <div style={{ paddingTop: 12 }}>
           <Divider />
         </div>
@@ -72,11 +69,11 @@ export default function SignupCard() {
         </div>
 
         <div style={{ paddingTop: 12 }}>
-          {/* <NavLink style={{ textDecoration: 'none' }} to={`/login`}> */}
+          <NavLink style={{ textDecoration: 'none' }} to={`/login`}>
             <Typography>
               Already have an account? <Link>Sign In Now</Link>
             </Typography>
-          {/* </NavLink> */}
+          </NavLink>
         </div>
       </CardContent>
     </Card>
