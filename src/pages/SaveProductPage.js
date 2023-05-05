@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import CommonLayout from './../layouts/common/CommonLayout';
 
 export default function SaveProductPage() {
   return (
-    <div>SaveProductPage</div>
-  )
+    <div>
+      <CommonLayout></CommonLayout>
+    </div>
+  );
 }
